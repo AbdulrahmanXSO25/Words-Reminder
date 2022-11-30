@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Words Reminder</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">  
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="main-title">Words Reminder!</h1>
+    </div>
+
+    <div class="new-word">
+        <div class="container">
+        <div class="inputs">
+            <input type="text" id="en" class="en-input" placeholder="Word In English">
+            <input type="text" id="ar" class="ar-input" placeholder="Word In Arabic/Your Main Lang [Optional]">
+        </div>
+        <button onclick="addNewWord()">Add Word</button>
+        </div>
+    </div>
+    <div class="words">
+        <div class="container">
+        </div>
+        <h2 class="delete-all" id="deleteAllBtn">Delete All!</h2>
+    </div>
+
+    <div class="footer">
+        <p class="copyright">Made with ❤️ By <a target="_blank" href="https://github.com/AbdulrahmanXSO25">Abdulrahman Nader</a> 2022&copy;</p>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>
