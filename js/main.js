@@ -14,7 +14,6 @@ else
     words = [];
 }
 
-
 arWords.forEach(i => {
     if (i.innerHTML == ''){
         i.style.display = 'none';
@@ -31,7 +30,6 @@ deleteAllBtn.onclick = function deleteAll()
     words.splice(0);
     showWords();
 }
-
 
 function addNewWord()
 {
@@ -90,6 +88,15 @@ function showWords() {
             let empty = document.createElement('h1');
             empty.innerHTML = 'You didn\'t add any words yet, Try to add a word!';
             wordsContainer.appendChild(empty);
+        }
+        
+        if (words.length == 0)
+        {
+            deleteAllBtn.style.display = 'none';
+        }
+        else
+        {
+            deleteAllBtn.style.display = 'block';
         }
 }
 
