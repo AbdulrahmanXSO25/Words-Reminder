@@ -204,7 +204,7 @@ h1 {
 }
 .words .word {
   width: fit-content;
-  padding: 15px;
+  padding: 5px 10px;
   font-weight: bold;
   color: #fff;
   background-color: #da357a;
@@ -213,13 +213,13 @@ h1 {
 }
 .words .word .en-word {
   text-align: center;
-  margin: 20px 0;
-  font-size: 30px;
+  margin: 10px 0;
+  font-size: 20px;
   letter-spacing: 1px;
 }
 .words .word .ar-word p{
-  font-size: 28px;
-  padding: 10px;
+  font-size: 20px;
+  padding: 5px 10px;
   color: #ddd;
   opacity: 0;
   text-align: center;
