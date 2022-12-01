@@ -16,25 +16,26 @@
 </head>
 <body>
     
-    <div class="container">
-        <h1 class="main-title"> <i class="fa-solid fa-bell"></i>Words Reminder!</h1>
-    </div>
-
-    <div class="new-word">
+    <div class="main">
         <div class="container">
-        <div class="inputs">
-            <input type="text" id="en" class="en-input" placeholder="Word In English">
-            <input type="text" id="ar" class="ar-input" placeholder="Word In Arabic/Your Main Lang [Optional]">
+            <h1 class="main-title"> <i class="fa-solid fa-bell"></i>Words Reminder!</h1>
         </div>
-        <button onclick="addNewWord()">Add Word<i class="fa-solid fa-circle-plus"></i></button>
+    
+        <div class="new-word">
+            <div class="container">
+            <div class="inputs">
+                <input type="text" id="en" class="en-input" placeholder="Word In English">
+                <input type="text" id="ar" class="ar-input" placeholder="Word In Arabic/Your Main Lang [Optional]">
+            </div>
+            <button onclick="addNewWord()">Add Word<i class="fa-solid fa-circle-plus"></i></button>
+            </div>
+        </div>
+        <div class="words">
+            <div class="container">
+            </div>
+            <h2 class="delete-all" id="deleteAllBtn"> <i class="fa-solid fa-trash"></i> Delete All!</h2>
         </div>
     </div>
-    <div class="words">
-        <div class="container">
-        </div>
-        <h2 class="delete-all" id="deleteAllBtn"> <i class="fa-solid fa-trash"></i> Delete All!</h2>
-    </div>
-
     <div class="footer">
         <p class="copyright">Made with ❤️ By <a target="_blank" href="https://github.com/AbdulrahmanXSO25">Abdulrahman Nader</a> 2022&copy;</p>
     </div>

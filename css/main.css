@@ -17,7 +17,9 @@ html {
 body {
   background: linear-gradient(to left, #8f94fb, #4e54c8);  
   font-family: "Cairo", sans-serif;
-  min-height: 100%;
+}
+.main {
+  min-height: calc(100vh - 118px);
 }
 a {
   text-decoration: none;
@@ -270,7 +272,8 @@ h1 {
 
 /* Start Footer */
 .footer {
-  background: linear-gradient(to left, #7a7fd8, #4248b3);  
+  background: linear-gradient(to left, #7a7fd8, #4248b3);
+  height: 67px;
 }
 .footer .copyright {
   padding: 25px 0;
