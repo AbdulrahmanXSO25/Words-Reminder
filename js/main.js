@@ -3,7 +3,7 @@ let wordsContainer = document.querySelector('.words .container');
 let wordsDiv = document.querySelector('.words');
 let deleteAllBtn = document.getElementById('deleteAllBtn');
 
-let words;
+let words = [];
 
 if (localStorage.words != null)
 {
@@ -55,22 +55,22 @@ function showWords() {
         wordsContainer.innerHTML = '';
         if (!words.length == 0)
         {
-            words.forEach(i => {
+            for (let i = 0; i < words.length; i++) {
             let word = document.createElement('div');
             word.className = 'word';
             let wordEn = document.createElement('div');
             wordEn.className = 'en-word';
-            wordEn.innerHTML = i.en;
+            wordEn.innerHTML = words[i].en;
             word.appendChild(wordEn);
             wordsContainer.appendChild(word);
-            if (!i.ar == '')
+            if (!words[i].ar == '')
             {
                 let wordAr = document.createElement('div');
                 wordAr.className = 'ar-word';
                 wordAr.id = 'arWord';
                 let wordArText = document.createElement('p');
                 wordAr.appendChild(wordArText);
-                wordArText.innerHTML = i.ar;
+                wordArText.innerHTML = words[i].ar;
                 word.appendChild(wordAr);
             }
             let deletebtn = document.createElement('span');
@@ -82,7 +82,7 @@ function showWords() {
                 showWords();
             }
             word.appendChild(deletebtn);
-        });
+        }
         }
         else {
             let empty = document.createElement('h1');
