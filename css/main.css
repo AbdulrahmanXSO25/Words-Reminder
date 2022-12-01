@@ -63,6 +63,9 @@ ul {
   transition: var(--main-transition);
   margin: 20px auto ;
 }
+.main-title i {
+  margin-right: 10px;
+}
 .main-title:hover {
   border: 4px solid transparent;
   color: #fff;
@@ -149,6 +152,9 @@ h1 {
   border: none;
   border: 2px solid var(--main-color);
 }
+.new-word button i {
+  margin-left: 10px;
+}
 .new-word button:hover {
   border-color: var(--main-color-alt);
   transition: var(--main-transition);
@@ -225,6 +231,7 @@ h1 {
 }
 .words span {
   color: #680a31;
+  margin: 0 auto;
 }
 .words span:hover {
   transition: var(--main-transition);
